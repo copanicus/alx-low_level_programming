@@ -7,7 +7,7 @@
 * Description: Dora Korpar piece of art
 * useful piece of art
 * Return: 0
-
+*/
 
 
 int main(void)
