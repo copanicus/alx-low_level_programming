@@ -5,7 +5,7 @@
 /**
 * main - point of entry
 * Description: Dora Korpar piece of art
-* *
+* useful piece of art
 * Return: 0
 
 
