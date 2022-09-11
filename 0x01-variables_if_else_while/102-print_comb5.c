@@ -23,7 +23,7 @@ int main(void)
 				putchar (' ');
 				putchar ((b / 10) + '0');
 				putchar ((b % 10) + '0');
-				if (a != '6')
+				if (a != 98 || b != 99)
 				{
 					putchar (',');
 					putchar (' ');
