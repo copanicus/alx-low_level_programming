@@ -10,18 +10,21 @@
 
 int main(void)
 {
-	int a, i;
+	int a, b;
 
 	for (a = '0'; a <= '9'; a++)
 	{
-		if (a < i)
+		for (b = '0'; b <= '9'; b++)
 		{
-			putchar (a);
-			putchar (i);
-			if (a != '8' || (a == '8' && i != '9'))
+			if (a < b)
 			{
-				putchar (',');
-				putchar (' ');
+				putchar (a);
+				putchar (b);
+				if (a != '8' || (a == '8' && b != '9'))
+				{
+					putchar (',');
+					putchar (' ');
+				}
 			}
 		}
 	}
