@@ -3,7 +3,7 @@
 /**
 * print_alphabet_x10 - print lowercase letters
 *
-* Description: print_alphabet_x10 
+* Description: print_alphabet_x10
 */
 
 void print_alphabet_x10(void)
