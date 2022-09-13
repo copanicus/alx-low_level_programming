@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-* _isapha - to confirm alphabetic letters
-* 
-* Description: to check the characters of the letter
+* 4_isapha - to confirm alphabetic letter
+*
+* Decription: _isalpha or not
+* @c: to display letters in small or big
 * Return: depending on the conditions return 0 or 1
 */
 
