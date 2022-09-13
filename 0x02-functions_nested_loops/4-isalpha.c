@@ -3,7 +3,7 @@
 /**
 * _isapha - to confirm alphabetic letters
 * 
-* @c: to check the characters of the letter
+* Description: to check the characters of the letter
 * Return: depending on the conditions return 0 or 1
 */
 
