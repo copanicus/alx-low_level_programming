@@ -20,10 +20,10 @@ int main(void)
 		if ((n % 3) == 0)
 		{
 			sum1 = sum1 + n;
-		else if ((n % 5) == 0)
-		{
-			sum2 = sum2 + n;
-		}
+			else if ((n % 5) == 0)
+			{
+				sum2 = sum2 + n;
+			}
 		}
 	}
 		sum = sum1 + sum2;
