@@ -2,8 +2,6 @@
 
 /**
 * print_times_table - n times table
-*
-* Description: Starting from 0
 * @n: times table number
 */
 
