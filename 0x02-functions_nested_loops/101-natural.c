@@ -8,14 +8,14 @@
 
 int main(void)
 {
-	unsigned long sum1, sum2, sum;
+	unsigned long int sum1, sum2, sum;
 	int n;
 
 	sum1 = 0;
 	sum2 = 0;
 	sum = 0;
 
-	for (n = 0; n < 1024; n++)
+	for (n = 0; n < 1024; ++n)
 	{
 		if ((n % 3) == 0)
 		{
