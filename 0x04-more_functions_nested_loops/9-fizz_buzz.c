@@ -4,37 +4,25 @@
 /**
 * main - to print the number 1 to 100
 *
-* Decription: for multiple of 3 fizz and for 5 buzz
+* Decription: for multiple of 3 fizz while that of 5 buzz
 * Return: 0 always
 */
 
 int main(void)
 {
-	int i;
+	int i = 1;
 
-	for (i = 0; i <= 100; i++)
+	while (i <= 100)
 	{
-		if (i / 3 == 1 && i / 5 != 1)
-		{
-			printf("Fizz");
-		}
-		else if (i / 5 == 1 && i / 3 != 1)
-		{
-			printf("Buzz");
-		}
-		else if (i / 3 == 1 && i / 5 == 1)
-		{
-			printf("FizzBuzz");
-		}
-		else if (i == 1)
-		{
-			printf("%d", i);
-		}
+		if (i % 3 == 0)
+			printf("Fizz ");
+		else if (i % 5 == 0)
+			printf("Buzz ");
+		else if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz ");
 		else
-		{
-			print(" %d", i);
-		}
+			printf("%d ", i);
+		i++;
 	}
 	printf('\n');
-	return (0);
 }
