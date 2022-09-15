@@ -3,10 +3,10 @@
 /**
 * _isupper - uppercase alphabets
 *
-* Description: printing of uppercase letters
 * @c: checking characters
 * Return: 1 or 0
-*/
+*
+**/
 
 int _isupper(int c)
 {
