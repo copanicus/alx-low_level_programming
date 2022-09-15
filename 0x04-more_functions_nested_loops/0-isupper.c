@@ -2,11 +2,9 @@
 
 /**
 * _isupper - uppercase alphabets
-*
 * @c: checking characters
 * Return: 1 or 0
-*
-**/
+*/
 
 int _isupper(int c)
 {
