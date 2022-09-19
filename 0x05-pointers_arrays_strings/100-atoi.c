@@ -39,5 +39,5 @@ int _atoi(char *s)
 	}
 	if (e == 0)
 		return (0);
-	return (b);
+	return (c);
 }
