@@ -18,7 +18,7 @@ while (s[a] != '\0')
 	a++;
 }
 c = a - 1;
-for (b = 0; b < len / 2; b++)
+for (b = 0; b < a / 2; b++)
 {
 	d = s[b];
 	s[b] = s[c];
