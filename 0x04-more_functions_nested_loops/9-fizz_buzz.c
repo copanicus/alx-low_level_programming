@@ -2,39 +2,25 @@
 #include <stdio.h>
 
 /**
-* main - print number from Fizz for 3 and Buzz for 5
+* main - fizz for multiple of 3, buzz for 5 while fizzbuzz for both
 *
-* Description: print Fizz for multiple of for both print FizzBuzz
 * Return: 0 always
 */
 
 int main(void)
 {
-	int i;
+	int a;
 
-	for (i = 1; i <= 100; i++)
+	for (a = 1; a <= 100; a++)
 	{
-		if (i % 3 == 0 && i % 5 != 0)
-		{
-			printf(" Fizz");
-		}
-		else if (i % 5 == 0 && i % 3 != 0)
-		{
-			printf(" Buzz");
-		}
-		else if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf(" FizzBuzz");
-		}
-		else if (i == 1)
-		{
-			printf("%d", i);
-		}
+		if ((a % 3) == 0)
+			printf("Fizz ");
+		else if (((a % 3) || (a % 5)) == 0)
+			printf("FizzBuzz ");
+		else if ((a % 5) == 0)
+			printf("Buzz ");
 		else
-		{
-			printf(" %d". i);
-		}
+			printf("%d ", i);
 	}
-	printf("\n");
 	return (0);
 }
