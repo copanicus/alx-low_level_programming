@@ -9,9 +9,9 @@
 
 int main(void)
 {
-	int a = 1;
+	int a;
 
-	while (a <= 100)
+	for (a = 1; a <= 100; a++)
 	{
 		if (a % 15 == 0)
 			printf("FizzBuzz ");
@@ -21,7 +21,6 @@ int main(void)
 			printf("Buzz ");
 		else
 		printf("%d ", a);
-		a++;
 	}
 	printf("\n");
 	return (0);
