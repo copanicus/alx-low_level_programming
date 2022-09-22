@@ -1,23 +1,32 @@
-#include <stdio.h>
+#include "main.h"
 
-int main(void)
-{
-int n;
-int a[5];
-int *p;
-
-a[2] = 1024;
-p = &n;
-/*
-* write your line of code here...
-* Remember:
-* - you are not allowed to use a
-* - you are not allowed to modify p
-* - only one statement
-* - you are not allowed to code anything else than this line of code
+/**
+* print_number - prints an integer.
+* @n: input integer.
+* Return: void
 */
-p[5] = 98;
-/* ...so that this prints 98\n */
-printf("a[2] = %d\n", a[2]);
-return (0);
+void print_number(int n)
+{
+	unsigned int a, b, c;
+
+	if (n < 0)
+	{
+		_putchar(45);
+		a = n * -1;
+	}
+	else
+	{
+		a = n;
+	}
+	b = a;
+	c = 1;
+	while (b > 9)
+	{
+		b /= 10;
+		c *= 10;
+	}
+	for (; c >= 1; c /= 10)
+	{
+		_putchar(((a / c) % 10) + 48);
+	}
 }
