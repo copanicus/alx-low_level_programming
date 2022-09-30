@@ -12,20 +12,20 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int j = 0;
+	int a = 0;
+	int b = 0;
 
-	while (dest[i] != '\0')
-		i++;
+	while (dest[a] != '\0')
+		a++;
 
-	while (src[j] != '\0')
+	while (src[b] != '\0')
 	{
-		*(dest + i) = src[j];
-		j++;
-		i++;
+		*(dest + a) = src[b];
+		b++;
+		a++;
 	}
 
-	*(dest + i) = '\0';
+	*(dest + a) = '\0';
 
 	return (dest);
 }
