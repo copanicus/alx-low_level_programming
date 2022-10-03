@@ -2,7 +2,6 @@
 
 /**
 * _isalpha - to confirm alphabetic letter
-*
 * Decription: is it an alphabet
 * @c: to display letters in small or big
 * Return: depending on the conditions return 0 or 1
