@@ -11,23 +11,23 @@
  */
 void _is_zero(char *argv[])
 {
-	int i, isn1 = 1, isn2 = 1;
+	int a, b = 1, c = 1;
 
-	for (i = 0; argv[1][i]; i++)
-		if (argv[1][i] != '0')
+	for (a = 0; argv[1][a]; a++)
+		if (argv[1][a] != '0')
 		{
-			isn1 = 0;
+			b = 0;
 			break;
 		}
 
-	for (i = 0; argv[2][i]; i++)
-		if (argv[2][i] != '0')
+	for (a = 0; argv[2][a]; a++)
+		if (argv[2][a] != '0')
 		{
-			isn2 = 0;
+			c = 0;
 			break;
 		}
 
-	if (isn1 == 1 || isn2 == 1)
+	if (b == 1 || c == 1)
 	{
 		printf("0\n");
 		exit(0);
@@ -36,41 +36,41 @@ void _is_zero(char *argv[])
 
 /**
  * _initialize_array - set memery to zero in a new array
- * @ar: char array.
- * @lar: length of the char array.
+ * @d: char array.
+ * @e: length of the char array.
  *
  * Return: pointer of a char array.
  */
-char *_initialize_array(char *ar, int lar)
+char *_initialize_array(char *d, int e)
 {
-	int i = 0;
+	int f = 0;
 
-	for (i = 0; i < lar; i++)
-		ar[i] = '0';
-	ar[lar] = '\0';
-	return (ar);
+	for (f = 0; f < e; f++)
+		d[f] = '0';
+	d[e] = '\0';
+	return (d);
 }
 
 /**
  * _checknum - determines length of the number
  * and checks if number is in base 10.
  * @argv: arguments vector.
- * @n: row of the array.
+ * @g: row of the array.
  *
  * Return: length of the number.
  */
-int _checknum(char *argv[], int n)
+int _checknum(char *argv[], int g)
 {
-	int ln;
+	int h;
 
-	for (ln = 0; argv[n][ln]; ln++)
-		if (!isdigit(argv[n][ln]))
+	for (h = 0; argv[g][h]; h++)
+		if (!isdigit(argv[g][h]))
 		{
 			printf("Error\n");
 			exit(98);
 		}
 
-	return (ln);
+	return (h);
 }
 
 /**
